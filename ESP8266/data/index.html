@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- 
+  Rui Santos
+  Complete project details at https://RandomNerdTutorials.com  
+  Designer: Nguyễn Đình Đại Nghĩa
+  Contact:  0812203689 - dainghia0127@gmail.com
+-->
+<html lang="en">
+
+<head>
+    <title>Air Conditioner Infomation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body style="border: 2px solid black; height: 97%;">
+    <div class="container">
+        <img src="logo">
+        <h1>Smart Door</h1>
+        <h4>Control Door</h4>
+
+
+        <!-- 4 -->
+        <div id="ControlMode" class="tabcontent">
+
+            <form action='/get1' method='get' id='fconfigmode' style="margin-top: 10px;">
+                <div style="display: block;width: 300px;margin: 0px auto;">
+                    <div class="SwitchControl1">
+                        <label class="switch1"><input type="checkbox" id="1" name="running_mode1" value="auto"
+                                onclick="update_mode1()">
+                            <div class="slider1 round1"><h2>ON</h2></div>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <footer>
+        <div class="footer">
+            <h3>SMART DOOR, the project of Bee Smart team</h3>
+        </div>
+        
+    </footer>
+    </div>
+</body>
+<script>
+    function update_mode1() {
+        document.getElementById('fconfigmode').submit();
+    }
+</script>
+
+</html>
+<!-- ***END*** -->
+<!-- Designer: Nguyễn Đình Đại Nghĩa
+  Contact:  0812203689 - dainghia0127@gmail.com -->
